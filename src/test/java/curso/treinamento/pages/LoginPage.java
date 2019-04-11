@@ -20,4 +20,30 @@ public class LoginPage {
     @FindBy(name = "login")
     WebElement botaoSign;
 
+    @FindBy(linkText = "signoff")
+    WebElement linkSignOff;
+
+    @FindBy(linkText = "REGISTER")
+    WebElement linkRegister;
+
+    public boolean checkPage() {
+        return botaoSign.isDisplayed();
+    }
+
+    public void realizarLogin(String user, String senha) {
+
+        campoUsuario.sendKeys(user);
+
+        campoPassword.sendKeys(senha);
+
+        botaoSign.click();
+    }
+
+    public boolean checkSignOff() {
+        return linkSignOff.isDisplayed();
+    }
+
+    public void clickRegiser() {
+        linkRegister.click();
+    }
 }
