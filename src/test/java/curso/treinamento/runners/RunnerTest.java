@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/features"},
         glue = {"curso.treinamento.steps", "curso.treinamento.setup"},
         snippets = SnippetType.CAMELCASE,
-        tags = {"@Registrar"})
+        tags = {""})
 
 public class RunnerTest {
 
